@@ -1,0 +1,137 @@
+@media only screen and (max-width:1680px) {}
+@media only screen and(max-width:1600px) {}
+
+@media only screen and(max-width:1366px) {}
+
+@media only screen and(max-width:1280px) {}
+
+@media only screen and(max-width:1199px) {}
+
+@media only screen and(max-width:1136px) {}
+
+@media only screen and(max-width:1024px) {}
+
+@media only screen and(max-width:991px){ }
+
+/* @media only screen and(min-width:768px) {
+    
+	ul.nav li.dropdown ul{ display: none;}
+	ul.nav li.dropdown:hover ul{ display: block;}
+	
+	ul.nav li.dropdown ul li.dropdown-submenu ul{ display: none;}
+	ul.nav li.dropdown ul li.dropdown-submenu:hover ul{ display: block;}
+	
+	.caret-m{ display:none;}
+	.section-table-collapsible table.table table.table-inner tbody{ display:table;}
+	.section-table-collapsib table.table table.table-inner tbody{ display:table-row-group;}
+	
+	a.navbar-small-resolutionz{ display:none;}
+	a.navbar-big-resolutionz{ display:block;}
+	.navbar-middle .navbar-header { float:none; display:inline-block; position:absolute; width:13%; margin:auto; left:0; right:0; top:0; bottom:0; z-index:99;}
+	.navbar-middle .navbar-header .navbar-big-resolutionz{ margin:0;}
+	
+	.navbar-middle.navbar-hight .navbar-header { float:none; display:inline-block; position:relative; width:auto; margin:auto; left:0; right:0; top:0; bottom:0; z-index:99;}
+	.navbar > .container .navbar-brand, .navbar > .container-fluid .navbar-brand{ margin-left:0px;}
+	.navbar-middle.navbar-hight .navbar-header .navbar-brand{ min-height:70px; margin:1em auto; padding:0 0.8em;}
+} */
+
+@media only screen and (max-width: 767px) {
+    
+html, body { width: auto; padding-top:0; }
+  
+/*small-view-side-menu*/ 
+.isStuck{ display:none;}
+.navbar{ margin-bottom:0;}
+
+#slide-navbar-collapse {position: fixed;width: 250px;position: fixed;top: 0;left: 0;z-index: 99;width: 280px;height: 100%;transform: translateX(-120%); -webkit-transform: translateX(-120%);transition: transform .3s ease-out;transition: transform .3s ease-out,-webkit-transform .3s ease-out; display: block;}
+#slide-navbar-collapse.side_nave_in {transform: translateX(0);-webkit-transform: translateX(0);}
+
+.menu-overlay {background-color:rgba(0,0,0,0.85);bottom: 0;left: 0;position: fixed;right: 0;top: 0;z-index:9; display:none;-webkit-transition:all 0.2s ease-in-out; -moz-transition:all 0.2s ease-in-out; -ms-transition:all 0.2s ease-in-out; -o-transition:all 0.2s ease-in-out; transition:all 0.2s ease-in-out;}
+.menu-overlay.overlay_in{ display:block;-webkit-transition:all 0.2s ease-in-out; -moz-transition:all 0.2s ease-in-out; -ms-transition:all 0.2s ease-in-out; -o-transition:all 0.2s ease-in-out; transition:all 0.2s ease-in-out;}
+    
+
+a.navbar-brand.mobile_view_logo {display: block;width: 100%;clear: both; text-align: center;padding: 15px 0px;border-bottom: 1px solid rgba(0,0,0,0.1); }
+a.navbar-brand.mobile_view_logo img{ display: inline-block;width: 100px;}
+ul.nav.navbar-nav {clear: both;width: 100%;margin-top: 0;}
+    
+/*Toggel button	*/	
+.navTrigger {cursor: pointer; width: 30px;display:inline-block;transform: scale(0.8);}
+.navTrigger i {background-color: #000000;border-radius: 2px;content: '';display: block;width: 100%;height: 4px;}
+.navTrigger i:nth-child(1) {-webkit-animation: outT 0.8s backwards;animation: outT 0.8s backwards;-webkit-animation-direction: reverse;animation-direction: reverse;}
+.navTrigger i:nth-child(2) {margin: 5px 0;-webkit-animation: outM 0.8s backwards;animation: outM 0.8s backwards;-webkit-animation-direction: reverse;animation-direction: reverse;}
+.navTrigger i:nth-child(3) {-webkit-animation: outBtm 0.8s backwards;animation: outBtm 0.8s backwards;-webkit-animation-direction: reverse;animation-direction: reverse;}
+.navTrigger.active i:nth-child(1) {-webkit-animation: inT 0.8s forwards;animation: inT 0.8s forwards;}
+.navTrigger.active i:nth-child(2) {-webkit-animation: inM 0.8s forwards;animation: inM 0.8s forwards;}
+.navTrigger.active i:nth-child(3) {-webkit-animation: inBtm 0.8s forwards;animation: inBtm 0.8s forwards;}
+ button.navbar-toggle.collapsed {display:block;z-index: 111;}
+button.navbar-toggle.collapsed span.navTrigger.active i {background-color: #fff;}  
+ .navbar-nav .dropdown-menu { position: relative;}    
+/*Toggel button animation	*/	    
+@-webkit-keyframes inM {
+  50% { -webkit-transform: rotate(0deg);}
+  100% {-webkit-transform: rotate(45deg);}
+    }
+@keyframes inM {
+  50% {transform: rotate(0deg);}
+  100% {transform: rotate(45deg);}
+}
+@-webkit-keyframes outM {
+  50% {-webkit-transform: rotate(0deg);}
+  100% {-webkit-transform: rotate(45deg);}
+}
+@keyframes outM {
+    50% {transform: rotate(0deg);}
+  100% { transform: rotate(45deg);}
+}
+@-webkit-keyframes inT {
+  0% {-webkit-transform: translateY(0px) rotate(0deg);}
+  50% { -webkit-transform: translateY(9px) rotate(0deg);}
+  100% {-webkit-transform: translateY(9px) rotate(135deg);}
+}
+@keyframes inT {
+    0% {transform: translateY(0px) rotate(0deg);}
+  50% {transform: translateY(9px) rotate(0deg);}
+  100% {transform: translateY(9px) rotate(135deg);}
+}
+@-webkit-keyframes outT {
+  0% {-webkit-transform: translateY(0px) rotate(0deg);}
+  50% {-webkit-transform: translateY(9px) rotate(0deg);}
+  100% {-webkit-transform: translateY(9px) rotate(135deg);}
+}
+@keyframes outT {
+  0% {transform: translateY(0px) rotate(0deg);}
+  50% {transform: translateY(9px) rotate(0deg);}
+  100% {transform: translateY(9px) rotate(135deg);}
+}
+@-webkit-keyframes inBtm {
+  0% {-webkit-transform: translateY(0px) rotate(0deg);}
+  50% {-webkit-transform: translateY(-9px) rotate(0deg);}
+  100% {-webkit-transform: translateY(-9px) rotate(135deg);}
+}
+@keyframes inBtm {
+  0% {transform: translateY(0px) rotate(0deg);}
+  50% {transform: translateY(-9px) rotate(0deg);}
+  100% {transform: translateY(-9px) rotate(135deg);}
+}
+@-webkit-keyframes outBtm {
+  0% {-webkit-transform: translateY(0px) rotate(0deg);}
+  50% {-webkit-transform: translateY(-9px) rotate(0deg);}
+  100% {-webkit-transform: translateY(-9px) rotate(135deg);}
+}
+@keyframes outBtm {
+  0% {transform: translateY(0px) rotate(0deg);}
+  50% {transform: translateY(-9px) rotate(0deg);}
+  100% {transform: translateY(-9px) rotate(135deg);}
+}
+    
+/*Toggel button	*/	
+ 
+   
+     
+}
+  
+@media only screen and(max-width: 640px) {   }
+@media only screen and(max-width: 600px) { }
+@media only screen and(max-width: 480px) {  }
+@media only screen and(max-width:400px) {}
+@media only screen and(max-width:320px) {   }
