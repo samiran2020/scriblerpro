@@ -7,9 +7,9 @@
       <meta name="description" content="">
       <meta name="author" content="">
       <!-- Chrome, Firefox OS and Opera -->
-      <meta name="theme-color" content="#005EFD">
+      <meta name="theme-color" content="#082c59">
       <!-- Windows Phone -->
-      <meta name="msapplication-navbutton-color" content="#005EFD">
+      <meta name="msapplication-navbutton-color" content="#082c59">
       <!-- iOS Safari -->
       <meta name="apple-mobile-web-app-capable" content="yes">
       <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"> 
@@ -49,29 +49,39 @@
                 <div class="container_cust">
                     <div class="flex align-items-center justify-content-between flex-row flex-wrap gap-6 relative ">
                          <div class="navbar-header">
-                            <!--<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">--> 
-                            <button type="button" class="navbar-toggle collapsed absolute right-0" data-toggle="slide-collapse" data-target="#slide-navbar-collapse" aria-expanded="false">
-                            <span class="navTrigger">
-                            <i></i><i></i><i></i>
-                            </span>
-                            </button>
                             <a class="navbar-brand" href="index.html"><img class="img-responsive" src="images/light-logo.svg" alt="logo"></a>
                             <a class="navbar-brand fix-logo" href="index.html"><img class="img-responsive " src="images/dark-logo.svg" alt="logo"></a>
                          </div>
                          <!-- /.navbar-collapse --> 
                          <div class="flex flex-row flex-wrap ml-auto" id="slide-navbar-collapse">
-                            <a class="navbar-brand mobile_view_logo" href="index.html"><img class="img-responsive" src="images/light-logo.svg" alt="logo"></a>
+                            <div class="mobile_view_logo relative flex align-items-center justify-content-between flex-row flex-wrap">
+                                <a class="navbar-brand" href="index.html">
+                                    <img class="img-responsive" src="images/light-logo.svg" alt="logo">
+                                </a>
+                                <button type="button" class="navbar-toggle collapsed" data-toggle="slide-collapse" data-target="#slide-navbar-collapse" aria-expanded="false">
+                                    <i class="bi bi-arrow-left-square-fill"></i>
+                                </button>
+                            </div>
                             <ul class="nav navbar-nav flex align-items-center justify-content-center flex-row flex-wrap gap-6">
                                <li><a href="#wrapper " class="link">Service</a></li>
                                <li><a href="#about-sec" class="link">Features </a></li>
                                <li><a href="contact.html" class="link">Contact Us</a></li>
                             </ul>
+                            <div class="small-view">
+                                <a href="login.html " class="login-button  cmn-button border-button hvr-sweep-to-right">
+                                    <span><i class="bi bi-person"></i></span>Login
+                                </a> 
+                                <a href="register.html" class="register-button cmn-button hvr-sweep-to-right">Sign Up</a> 
+                            </div>
                          </div>
                          <div class="login-register flex gap-3">
                               <a href="login.html " class="login-button  cmn-button border-button hvr-sweep-to-right">
                                   <span><i class="bi bi-person"></i></span>Login
                               </a> 
                               <a href="register.html" class="register-button cmn-button hvr-sweep-to-right">Sign Up</a> 
+                              <button type="button" class="navbar-toggle collapsed" data-toggle="slide-collapse" data-target="#slide-navbar-collapse" aria-expanded="false">
+                                <i class="bi bi-list"></i>
+                              </button>
                          </div>
                     </div>
                    <div class="menu-overlay"></div>
@@ -136,7 +146,7 @@
                             <p class="color-grey-light">ScriblerPro is a new AI Speech to text service.</p>
                         </div>
                         
-                        <div class="col-sm-12 col-md-4">
+                        <div class="col-sm-4 col-md-4">
                             <div class="process-box relative flex flex-row justify-content-center align-items-center p-3">
                                 <small class="text-xl font-semibold text-white">1</small>
                                 <span class="icon inline-flex mx-3 relative">
@@ -145,7 +155,7 @@
                                 <h4 class="font-semibold text-center m-0 px-3">Upload an audio or video file of a conversation</h4>
                             </div>
                         </div>
-                        <div class="col-sm-12 col-md-4">
+                        <div class="col-sm-4 col-md-4">
                             <div class="process-box relative flex flex-row justify-content-center align-items-center p-3">
                                 <small class="text-xl font-semibold text-white">2</small>
                                 <span class="icon inline-flex mx-3 relative">
@@ -154,7 +164,7 @@
                                 <h4 class="font-semibold text-center m-0 px-3">We transcribe it in seconds</h4>
                             </div>
                         </div>
-                        <div class="col-sm-12 col-md-4">
+                        <div class="col-sm-4 col-md-4">
                             <div class="process-box relative flex flex-row justify-content-center align-items-center p-3">
                                 <small class="text-xl font-semibold text-white">3</small>
                                 <span class="icon inline-flex mx-3 relative">
@@ -345,7 +355,7 @@
                 <section class="testimonial-section py-8">
                     <div class="container_cust">
                         <div class="row justify-content-center text-center">
-                            <div class="col-sm-12 col-md-6 mb-4">
+                            <div class="col-sm-12 col-md-8 col-lg-6 mb-4">
                                 <h2 class="mb-3">Our Happy Customers</h2>
                                 <p class="color-grey-light">What customers are saying about our safety standards</p>
                             </div>
@@ -468,11 +478,11 @@
                         <div class="row justify-content-center get-bg">
                             <div class="col-sm-11 col-md-12 p-8">
                                 <div class="row">
-                                    <div class="col-md-8 col-sm-12">
+                                    <div class="col-lg-6 col-md-6 col-sm-12">
                                         <h2 class="mb-3">Ready to get started?</h2>
                                         <p class="color-grey-light">Unlock the value from your audio with our speech technology.</p>
                                     </div>
-                                    <div class="col-md-4 col-sm-12 flex align-items-center justify-content-end gap-3">
+                                    <div class="col-lg-6 col-md-6  col-sm-12 flex align-items-center justify-content-end gap-3">
                                         <a href="#" class="cmn-button hvr-sweep-to-right">Speak to Sales</a> 
                                         <a href="#" class="cmn-button hvr-sweep-to-right">Get Started Free</a> 
                                     </div>
@@ -491,7 +501,7 @@
 
         <!-- Footer content Area Start Here --> 
           <footer class="footer_sec">
-            <div class="container">
+            <div class="container_cust">
                 <div class="row">
                     <div class="col-sm-12 col-md-12 col-lg-3">
                         <a href="#" class="footer-logo flex mb-4">
@@ -501,28 +511,28 @@
                     </div>
                     <div class="col-sm-12 col-md-12 col-lg-9 pl-8">
                         <div class="row">
-                            <div class="col-sm-6 col-md-6 col-lg-3">
+                            <div class="col-sm-3 col-md-3 col-lg-3">
                                 <h6 class="font-semibold color-blue mb-3">PLATFORM</h6>
                                 <ul class="footer_link p-0 m-0">
                                     <li><a href="#">AI Transcription</a></li>
                                     <li><a href="#">Convert Audio To Text</a></li>
                                 </ul>
                             </div>
-                            <div class="col-sm-6 col-md-6 col-lg-3">
+                            <div class="col-sm-3 col-md-3 col-lg-3">
                                 <h6 class="font-semibold color-blue mb-3">SUPPORT</h6>
                                 <ul class="footer_link  p-0 m-0">
                                     <li><a href="#">Help Center</a></li>
                                     <li><a href="#">FAQ</a></li>
                                 </ul>
                             </div>
-                            <div class="col-sm-6 col-md-6 col-lg-3">
+                            <div class="col-sm-3 col-md-3 col-lg-3">
                                 <h6 class="font-semibold color-blue mb-3">COMPANY</h6>
                                 <ul class="footer_link  p-0 m-0">
                                     <li><a href="contact.html">Contact Us</a></li>
                                     <li><a href="#">FAQ</a></li>
                                 </ul>
                             </div>
-                            <div class="col-sm-6 col-md-6 col-lg-3">
+                            <div class="col-sm-3 col-md-3 col-lg-3">
                                 <h6 class="font-semibold color-blue mb-3">LEGAL</h6>
                                 <ul class="footer_link  p-0 m-0">
                                     <li><a href="#">Privacy Policy</a></li>
@@ -557,98 +567,92 @@
        
       <script>
           
-//         <!-- for responcive menu animation -->   
-          
-         $('.navTrigger').click(function(){
-          $(this).toggleClass('active');
-         });
-         $('.material-floating .form-control').on('focus blur', function (e) {
-         	$(this).parents('.material-floating .form-group').toggleClass('focused', (e.type === 'focus' || this.value.length > 0));
-         }).trigger('blur');
-         $('[data-toggle="slide-collapse"]').on('click', function() {
-         
-         $('#slide-navbar-collapse').toggleClass('side_nave_in');
-         $(".menu-overlay").toggleClass('overlay_in');
-          
-         });
-         $(".menu-overlay").click(function(event) {
-          $(".navbar-toggle").trigger("click");
-           $(".menu-overlay").removeClass('overlay_in');
-           $('.navTrigger').removeClass('active');
-         });
-          
-         $(".dropdown-toggle").click(function(){
-            $(".collapse").toggleClass("show");
-         }); 
-          
-//        <!-- WoW-animation-JavaScript -->     
-        wow = new WOW(
-		{
-			boxClass:     'wow',      // default
-			animateClass: 'animated', // default
-			offset:       0,          // default
-			mobile:       true,       // default
-			live:         true        // default
-		}
-		)
-		wow.init(); 
-          
-//<!-- Scroll-down-animation-JavaScript -->  
-          
-          $(document).ready(function(){
-              $(".down-buttn,.link").on('click', function(event) {
-                if (this.hash !== "") {
-                  event.preventDefault();
-                  var hash = this.hash;
-                  $('html, body').animate({
-                    scrollTop: $(hash).offset().top
-                  }, 800, function(){
-                    window.location.hash = hash;
-                  });
+        //         <!-- for responcive menu animation -->   
+
+        $('[data-toggle="slide-collapse"]').on('click', function() {
+                
+            $(".menu-overlay").toggleClass('overlay_in');
+            $('#slide-navbar-collapse').toggleClass('side_nave_in');
+            });
+                $(".menu-overlay").click(function(event) {
+                $(".navbar-toggle").trigger("click");
+                $(".menu-overlay").removeClass('overlay_in');
+                $('.navTrigger').removeClass('active');
+                $('#slide-navbar-collapse').removeClass('side_nave_in');
+            });
+            
+            $(".dropdown-toggle").click(function(){
+                $(".collapse").toggleClass("show");
+            }); 
+                
+        //        <!-- WoW-animation-JavaScript -->     
+                wow = new WOW(
+                {
+                    boxClass:     'wow',      // default
+                    animateClass: 'animated', // default
+                    offset:       0,          // default
+                    mobile:       true,       // default
+                    live:         true        // default
                 }
-              });
-            });   
-          
-//<!-- owl-carousel-JavaScript -->
-          
-       $('.owl-carousel').owlCarousel({
+                )
+                wow.init(); 
+                
+
+        //<!-- owl-carousel-JavaScript -->
+                
+                    
+        $('.owl-carousel').owlCarousel({
             loop:true,
             margin:10,
             nav:true,
             responsive:{
                 0:{
-                    items:1,
-                    stagePadding: 50,
-                    stagePadding:true,
-                    margin:20,
-                },
-                481:{
                     items:2
                 },
-                600:{
+                481:{
                     items:3
                 },
-                992:{
+                768:{
                     items:4
                 },
-                1200:{
+                1000:{
                     items:5
                 }
             }
         })
 
-//<!--menu add remove class JavaScript -->          
-      $(window).scroll(function() {    
-        var scroll = $(window).scrollTop();
+        //detect mobile screen size an create a var
+        width = $( window ).width();
 
-        if (scroll >= 48) {
-            $(".navbar").addClass("fixed_header");
-        } else {
-            $(".navbar").removeClass("fixed_header");
+        // conditional  to hide responsive Menu name or button on >900px screens
+        if ($(window).width()>767) {
+            $(window).scroll(function() {    
+                var scroll = $(window).scrollTop();
+
+                if (scroll >= 48) {
+                    $(".navbar").addClass("fixed_header");
+                } else {
+                    $(".navbar").removeClass("fixed_header");
+                }
+            });    
         }
-    });    
-          
-      </script>
+        
+        // conditional to hide entire menu and show mobile menu
+
+        if(width <= 767){
+        
+            $(window).scroll(function() {    
+                var scroll = $(window).scrollTop();
+
+                if (scroll >=0) {
+                    $(".navbar").removeClass("fixed_header");
+                } else {
+                    $(".navbar").removeClass("fixed_header");
+                }
+            }); 
+        }
+            
+    </script>
        
    </body>
 </html>

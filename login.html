@@ -7,9 +7,9 @@
       <meta name="description" content="">
       <meta name="author" content="">
       <!-- Chrome, Firefox OS and Opera -->
-      <meta name="theme-color" content="#005EFD">
+      <meta name="theme-color" content="#082c59">
       <!-- Windows Phone -->
-      <meta name="msapplication-navbutton-color" content="#005EFD">
+      <meta name="msapplication-navbutton-color" content="#082c59">
       <!-- iOS Safari -->
       <meta name="apple-mobile-web-app-capable" content="yes">
       <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"> 
@@ -47,7 +47,7 @@
             <section class="banner-section relative">
                 <div class="container_cust">
                     <div class="row align-items-center justify-content-between"> 
-                        <div class="col-sm-12 col-md-6 col-lg-6 order-2 order-sm-1">
+                        <div class="col-sm-12 col-md-6 col-lg-6">
                             <div class="caption">
                                 <h3 class="color-sky mb-2 font-medium">AI Speech to text service</h3>
                                 <h2 class="mb-4 font-bold">Speech-to-Text APIs, and much much more</h2>
@@ -62,7 +62,7 @@
                                 <img src="images/login-banner.webp" alt="banner-image">
                            </div>
                         </div>
-                        <div class="col-sm-12 col-md-6 col-lg-5 order-1 order-sm-2">
+                        <div class="col-sm-12 col-md-6 col-lg-5 ">
                             <div class="login-form bg-white w-full ">
                                 <div class="form-header px-5  py-5">
                                     <h2 class="mb-2">Customer <span class="color-sky">Login</span></h2>
@@ -110,8 +110,8 @@
         <!-- Body content Area End Here --> 
 
         <!-- Footer content Area Start Here --> 
-          <footer class="footer_sec">
-            <div class="container">
+        <footer class="footer_sec">
+            <div class="container_cust">
                 <div class="row">
                     <div class="col-sm-12 col-md-12 col-lg-3">
                         <a href="#" class="footer-logo flex mb-4">
@@ -121,28 +121,28 @@
                     </div>
                     <div class="col-sm-12 col-md-12 col-lg-9 pl-8">
                         <div class="row">
-                            <div class="col-sm-6 col-md-6 col-lg-3">
+                            <div class="col-sm-3 col-md-3 col-lg-3">
                                 <h6 class="font-semibold color-blue mb-3">PLATFORM</h6>
                                 <ul class="footer_link p-0 m-0">
                                     <li><a href="#">AI Transcription</a></li>
                                     <li><a href="#">Convert Audio To Text</a></li>
                                 </ul>
                             </div>
-                            <div class="col-sm-6 col-md-6 col-lg-3">
+                            <div class="col-sm-3 col-md-3 col-lg-3">
                                 <h6 class="font-semibold color-blue mb-3">SUPPORT</h6>
                                 <ul class="footer_link  p-0 m-0">
                                     <li><a href="#">Help Center</a></li>
                                     <li><a href="#">FAQ</a></li>
                                 </ul>
                             </div>
-                            <div class="col-sm-6 col-md-6 col-lg-3">
+                            <div class="col-sm-3 col-md-3 col-lg-3">
                                 <h6 class="font-semibold color-blue mb-3">COMPANY</h6>
                                 <ul class="footer_link  p-0 m-0">
-                                    <li><a href="#">Contact Us</a></li>
+                                    <li><a href="contact.html">Contact Us</a></li>
                                     <li><a href="#">FAQ</a></li>
                                 </ul>
                             </div>
-                            <div class="col-sm-6 col-md-6 col-lg-3">
+                            <div class="col-sm-3 col-md-3 col-lg-3">
                                 <h6 class="font-semibold color-blue mb-3">LEGAL</h6>
                                 <ul class="footer_link  p-0 m-0">
                                     <li><a href="#">Privacy Policy</a></li>
@@ -177,121 +177,118 @@
        
       <script>
           
-//         <!-- for responcive menu animation -->   
-          
-         $('.navTrigger').click(function(){
-          $(this).toggleClass('active');
-         });
-         $('.material-floating .form-control').on('focus blur', function (e) {
-         	$(this).parents('.material-floating .form-group').toggleClass('focused', (e.type === 'focus' || this.value.length > 0));
-         }).trigger('blur');
-         $('[data-toggle="slide-collapse"]').on('click', function() {
-         
-         $('#slide-navbar-collapse').toggleClass('side_nave_in');
-         $(".menu-overlay").toggleClass('overlay_in');
-          
-         });
-         $(".menu-overlay").click(function(event) {
-          $(".navbar-toggle").trigger("click");
-           $(".menu-overlay").removeClass('overlay_in');
-           $('.navTrigger').removeClass('active');
-         });
-          
-         $(".dropdown-toggle").click(function(){
-            $(".collapse").toggleClass("show");
-         }); 
-          
-//        <!-- WoW-animation-JavaScript -->     
-        wow = new WOW(
-		{
-			boxClass:     'wow',      // default
-			animateClass: 'animated', // default
-			offset:       0,          // default
-			mobile:       true,       // default
-			live:         true        // default
-		}
-		)
-		wow.init(); 
-          
-//<!-- Scroll-down-animation-JavaScript -->  
-          
-          $(document).ready(function(){
-              $(".down-buttn,.link").on('click', function(event) {
-                if (this.hash !== "") {
-                  event.preventDefault();
-                  var hash = this.hash;
-                  $('html, body').animate({
-                    scrollTop: $(hash).offset().top
-                  }, 800, function(){
-                    window.location.hash = hash;
-                  });
+        //         <!-- for responcive menu animation -->   
+
+        $('[data-toggle="slide-collapse"]').on('click', function() {
+                
+                $('#slide-navbar-collapse').toggleClass('side_nave_in');
+                $(".menu-overlay").toggleClass('overlay_in');
+                
+                });
+                    $(".menu-overlay").click(function(event) {
+                    $(".navbar-toggle").trigger("click");
+                    $(".menu-overlay").removeClass('overlay_in');
+                    $('.navTrigger').removeClass('active');
+                    $('#slide-navbar-collapse').removeClass('side_nave_in');
+                });
+                
+                $(".dropdown-toggle").click(function(){
+                    $(".collapse").toggleClass("show");
+                }); 
+                
+        //        <!-- WoW-animation-JavaScript -->     
+                wow = new WOW(
+                {
+                    boxClass:     'wow',      // default
+                    animateClass: 'animated', // default
+                    offset:       0,          // default
+                    mobile:       true,       // default
+                    live:         true        // default
                 }
-              });
-            });   
-          
-//<!-- owl-carousel-JavaScript -->
-          
-       $('.owl-carousel').owlCarousel({
+                )
+                wow.init(); 
+                
+
+        //<!-- owl-carousel-JavaScript -->
+                
+                    
+        $('.owl-carousel').owlCarousel({
             loop:true,
             margin:10,
             nav:true,
             responsive:{
                 0:{
-                    items:1,
-                    stagePadding: 50,
-                    stagePadding:true,
-                    margin:20,
-                },
-                481:{
                     items:2
                 },
-                600:{
+                481:{
                     items:3
                 },
-                992:{
+                768:{
                     items:4
                 },
-                1200:{
+                1000:{
                     items:5
                 }
             }
         })
 
-//<!--menu add remove class JavaScript -->          
-      $(window).scroll(function() {    
-        var scroll = $(window).scrollTop();
+        //detect mobile screen size an create a var
+        width = $( window ).width();
 
-        if (scroll >= 48) {
-            $(".navbar").addClass("fixed_header");
-        } else {
-            $(".navbar").removeClass("fixed_header");
+        // conditional  to hide responsive Menu name or button on >900px screens
+        if ($(window).width()>767) {
+            $(window).scroll(function() {    
+                var scroll = $(window).scrollTop();
+
+                if (scroll >= 48) {
+                    $(".navbar").addClass("fixed_header");
+                } else {
+                    $(".navbar").removeClass("fixed_header");
+                }
+            });    
         }
-    });    
-          
+        
+        // conditional to hide entire menu and show mobile menu
 
-    function formvalid() {
-  var vaildpass = document.getElementById("pass").value;
+        if(width <= 767){
+        
+            $(window).scroll(function() {    
+                var scroll = $(window).scrollTop();
 
-  if (vaildpass.length <= 8 || vaildpass.length >= 20) {
-    document.getElementById("vaild-pass").innerHTML = "Minimum 8 characters";
-    return false;
-  } else {
-    document.getElementById("vaild-pass").innerHTML = "";
-  }
-}
+                if (scroll >=0) {
+                    $(".navbar").removeClass("fixed_header");
+                } else {
+                    $(".navbar").removeClass("fixed_header");
+                }
+            }); 
+        }
+            
+                
 
-function show() {
-  var x = document.getElementById("pass");
-  if (x.type === "password") {
-    x.type = "text";
-  } else {
-    x.type = "password";
-    element.classList.add("hide-icon");
-  }
-}
-$(".eye").click(function(){
-  $(".eye").toggleClass("hide");
-});
+            function formvalid() {
+        var vaildpass = document.getElementById("pass").value;
+
+        if (vaildpass.length <= 8 || vaildpass.length >= 20) {
+            document.getElementById("vaild-pass").innerHTML = "Minimum 8 characters";
+            return false;
+        } else {
+            document.getElementById("vaild-pass").innerHTML = "";
+        }
+        }
+
+        function show() {
+        var x = document.getElementById("pass");
+        if (x.type === "password") {
+            x.type = "text";
+        } else {
+            x.type = "password";
+            element.classList.add("hide-icon");
+        }
+        }
+        $(".eye").click(function(){
+        $(".eye").toggleClass("hide");
+        });
+      
       </script>
        
    </body>
