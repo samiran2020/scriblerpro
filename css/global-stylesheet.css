@@ -169,7 +169,7 @@ nav.navbar.fixed_header a.register-button.cmn-button:hover{color: var(--sky);bor
 .banner-section{padding-top: 14.375rem;  margin-top: -9.375rem; background: var(--gredient-bottom-top); padding-bottom:5rem;}
 .banner-section a.cmn-button.hvr-sweep-to-right:before{ background: var(--blue);}
 .banner-section a.cmn-button:hover{border-color: var(--blue);}
-.small-box{border-radius: 15px;background: var(--white);box-shadow:var(--shadow1);width:100%; max-width: 267px;height: 115px;padding: 24px 17px;bottom: 5%!important;}
+.small-box{border-radius: 15px;background: var(--white);box-shadow:var(--shadow1);width:100%; max-width: 267px;height: 115px;padding: 24px 17px;bottom: 7%!important; left: 5%;}
 
 /* ---------------------------------------------------------------------Customers css ---------------------------------------------------------------------*/
 .partners-logo .item {width: 152px;margin: 0px auto;display: flex;align-items: center; justify-content: center;}
@@ -250,7 +250,8 @@ nav.navbar.fixed_header a.register-button.cmn-button:hover{color: var(--sky);bor
 .login-form button.cmn-button{background-color: var(--sky);height: 58px;}
 .login-form button.cmn-button:hover{background-color: var(--white);color: var(--blue);}
 
-.login-page-wrapper .small-box {right: 0; margin: auto;bottom: -14px!important;}
+.login-page-wrapper .banner-img{padding-bottom: 40px;}
+.login-page-wrapper .small-box {right: 0; margin: auto;bottom:35px!important;}
 .error-mesage { position: absolute; left: 0; bottom: -20px; color: red; font-size: 12px; }
 .checkbox-fild{text-align: center; height:auto;}
 .checkbox-fild label { position: relative;align-items: center;justify-content: center;flex-direction: row; background: transparent; width: auto!important;top:3px; 
